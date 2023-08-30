@@ -7,7 +7,7 @@ Smsapi::Client is a Ruby implementation for SMSAPI.pl gateway created by [Ruby L
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'smsapi-client', '~> 1.0'
+gem 'smsapi-client-softmaker', '~> 1.0'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install smsapi-client -v '~> 1.0'
+    $ gem install smsapi-client-softmaker -v '~> 1.0'
 
 If for some reason you wish to use the old authentication method that requires providing login and password, you still can. Just install version `~> 0.3`.
 

@@ -28,11 +28,11 @@ module Smsapi
     end
 
     def error?
-      self.status == 'ERROR'
+      self.status == STATUS_STRINGS[:error]
     end
 
     def success?
-      self.status == 'SUCCESS'
+      self.status == STATUS_STRINGS[:success]
     end
 
     def error_message
@@ -43,7 +43,7 @@ module Smsapi
       response = response.split(':')
 
       self.status = response[0]
-      if status == 'ERROR'
+      if status == STATUS_STRINGS[:error]
         self.error_code = response[1]
       else
         self.id = response[1]
