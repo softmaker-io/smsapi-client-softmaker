@@ -23,4 +23,10 @@ module Smsapi
     '101' => 'Bad Credentials',
     '1001' => 'Bad Request Format'
   }
+
+  # thanks to Anna Ślimak I was able to fix it as well, but a bit differently
+  STATUS_STRINGS = {
+    success: 'OK',
+    error: 'ERROR'
+  }
 end
